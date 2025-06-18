@@ -1,0 +1,5 @@
+python-dotenv
+requests
+duckduckgo_search
+flask # optional, for server functionality
+waitress # optional, for server functionality
