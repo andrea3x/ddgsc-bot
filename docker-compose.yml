@@ -1,0 +1,10 @@
+services:
+  ddgsc-bot:
+    image: ghcr.io/andrea3x/ddgsc-bot:latest
+    container_name: ddgsc-bot
+    user: 1000:1000 # Optional but recommended
+    ports:
+      - 5000:5000
+    env_file:
+      - .env
+    restart: unless-stopped
