@@ -29,7 +29,7 @@ def new_message(message):
     if text == '/start':
         return send_message(chat_id, start())
 
-    results = search(text, max_results=5)
+    results = search(text, max_results=5, safesearch='off')
     send_message(chat_id, sumup(results))
 
 
