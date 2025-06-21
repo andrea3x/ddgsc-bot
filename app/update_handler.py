@@ -63,4 +63,4 @@ def new_inline_query(inline_query):
 
 
 def sumup(results):
-    return "\n\n".join([f"{r["title"]}\n{r["href"]}\n{shorten(r["body"], width=70, placeholder='...')}" for r in results])
+    return "\n\n".join([f"<b>{r["title"]}</b>\n{r["href"]}\n<i>{shorten(r["body"], width=70, placeholder='...')}</i>" for r in results])
